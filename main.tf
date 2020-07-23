@@ -19,7 +19,7 @@ module "deserts" {
   source   = "./desert"
   for_each = local.names
 
-  name = module.name
+  name = module.example.name
   temp = each.value.temp
 }
 
