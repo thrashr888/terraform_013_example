@@ -17,7 +17,7 @@ locals {
 
 module "deserts" {
   source   = "./desert"
-  for_each = local.sites
+  for_each = local.names
 
   name = module.name
   temp = each.value.temp
